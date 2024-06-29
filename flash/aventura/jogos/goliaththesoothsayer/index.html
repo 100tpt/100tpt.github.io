@@ -15,13 +15,16 @@
         $(function(){
             $("#header").load("/flash/header.html");
         });
+        $(function(){
+            $("#left-sidebar").load("/flash/left_sidebar.html");
+        });
     </script>
 
     <style>
         .container {
             border-bottom: 3px solid black;
         }
-        #sidebar{
+        aside {
             background-color: #eeeeee;
         }
         .br {
@@ -37,25 +40,13 @@
 
     <main class="container bl br">
         <div class="row">
-            <aside id="sidebar" class="col-3 br">
-                <nav>
-                    <ul><a href="/flash/">Início</a></ul>
-                    <ul><a href="#">Corrida</a></ul>
-                    <ul><a href="#">Tiro/Luta</a></ul>
-                    <ul><a href="/flash/aventura/">Aventura</a></ul>
-                    <ul><a href="#">Infantil/Básico</a></ul>
-                    <ul><a href="#">Tabuleiro/Cartas</a></ul>
-                    <ul><a href="#">Outros</a></ul>
-                </nav>
-            </aside>
+            <aside id="left-sidebar" class="col-3 bl"></aside>
             <div class="col-6" style="text-align: center">
                 <object>
                     <embed src="./game.swf" width="100%" height="400" />
                 </object>
             </div>
-            <aside id="sidebar" class="col-3 bl">
-                
-            </aside>
+            <aside id="right-sidebar" class="col-3 bl"></aside>
         </div>
     </main>
     <!-- bootstrap js -->
